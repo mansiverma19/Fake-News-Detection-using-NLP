@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("img1.jpg") no-repeat top center ;
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  backdrop-filter: blur(50px);
+  /* backdrop-filter: blur(10px); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: azure;
+  width: 100%;
+}
+.body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+form {
+  /* height: 90%; */
+  height: fit-content;
+  width: 50%;
+  max-width: 800px;
+  max-height: 1200px;
+  background: rgba(19, 0, 0, 0.488);
+  backdrop-filter: blur(50px);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: stretch;
+  padding: 10px;
+}
+form > h2 {
+  text-align: center;
+}
+form > textarea {
+  margin-bottom: 20px;
+}
+.input {
+  margin-bottom: 10px;
+}
+
+.button {
+  width: 200px;
+  padding: 10px;
+  margin-top: 20px;
+  align-self: center;
+  background-color: #FF6666;
+  border: solid 2px gray;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.2s ease;
+}
+.button:hover {
+  background-color: #fd4545;
+  border: solid 2px #fd4545;
+  box-shadow: 0 0 10px rgb(38, 38, 38);
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    /* background-color: brown; */
+    width: 98%;
+  }
+  .header {
+    font-size: 15px;
+    height: fit-content
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <!-- <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}"> -->
+        <link rel="stylesheet" href="static\css\main.css">
+        
+    </head>
+    <body>
+          
+            <div id="main-div" class="container">
+          
+                
+                <!-- <div id="back">
+                    <input id="button1" type="button" class="right" value="BACK" onclick="history.go(-1)">
+                </div> -->
+                <div class="header" >
+                    <h1 class="text">FAKE NEWS DETECTION</h1>
+                    <h3 class="text">Predict the probability that news is fake or real</h2>
+                </div>
+            
+            <div class="body">
+                <form action="/predict"  method='POST'>
+                    <h2>
+                        ENTER THE NEWS
+                    </h2>  
+                        <input class="input" name="title" id="title" rows="3" cols="50" placeholder="Title" required></input>
+              
+                        <textarea name="text" rows="4"  id="text" placeholder="News Text" required></textarea>
+
+                        <input class="input" name="source" id="source" rows="3" cols="50" placeholder="Source" required></input>
+                                     
+                        <input type="Submit" class="button" value="PREDICT" id="button2">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

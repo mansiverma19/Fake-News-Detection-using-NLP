@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <!-- <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}"> -->
+    </head>
+    <body>
+        <div id="main-div">
+            <div class="sub1-div"> 
+                <div class="flex-container">
+                    <div id="back">
+                        <input id="button1" type="button" class="right" value="BACK" onclick="history.go(-1)">
+                    </div>
+                    <div class="sub-sub1-div">
+                        <h1 class="text">FAKE NEWS DETECTION</h1>
+                        <h3 class="text">Predict the probability that news is fake or real</h2>
+                    </div>
+                </div>
+                <img src="\static\css\logo.png" alt="logo" class="img-logo">
+            </div>
+            <div class="sub2-div">
+                <div class="sub-sub2-div">
+                    <div><h4 style="color:#FF6347; text-align:center;font-size:160%;font-family:courier;">ENTER THE NEWS</h4></div>
+                    <div class="form-floating mb-3">
+                        <textarea name="message" rows="4" cols="50" placeholder="News Text"></textarea>
+                    </div>
+                    <div class="form-floating">
+                        <br>
+                        <textarea name="message" rows="3" cols="50" placeholder="Title"></textarea>
+                    </div>
+                    <div>
+                        <br>
+                        <input type="Submit" id="button2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
